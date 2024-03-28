@@ -10,7 +10,7 @@ using namespace std;
 
 int main(){
     int sock = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
-    char ip[] = "127.0.0.1";
+    const char * ip = "127.0.0.1";
     int port = 1234;
 
     struct sockaddr_in server_addr;
